@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Bài Tập JS Buổi 1</h1>
+      <!-- Start Ex1 -->
+      <section class="exe exe1">
+        <div class="description">
+          <h2 class="heading-exe">Bài tập 1:</h2>
+          <div class="detail">
+            <div class="detail-steps">Input:</div>
+            <div class="detail-perform">
+              Số ngày làm việc, tiền lương 1 ngày
+            </div>
+            <div class="detail-steps">Bước 1:</div>
+            <div class="detail-perform">
+              Tạo biến soNgay, tienLuong, tongLuong
+            </div>
+            <div class="detail-steps">Bước 2:</div>
+            <div class="detail-perform">
+              Gán giá trị cho biến soNgay, tienLuong
+            </div>
+            <div class="detail-steps">Bước 3:</div>
+            <div class="detail-perform">
+              Tính tổng lương theo công thức: tongLuong = soNgay * tienLuong
+            </div>
+            <div class="detail-steps">Bước 4:</div>
+            <div class="detail-perform">In kết quả ra console</div>
+            <div class="detail-steps">Output:</div>
+            <div class="detail-perform">Tổng số tiền lương</div>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <label for="datenumber">Số ngày làm việc:</label>
+            <input type="text" id="datenumber" placeholder="Nhập số ngày" />
+
+            <label for="money">Tiền lương 1 ngày:</label>
+            <input type="text" id="money" placeholder="Nhập số tiền" />
+
+            <label for="">Thành tiền VNĐ:</label>
+            <input
+              type="text"
+              id="result--exe1"
+              readonly="readonly"
+              placeholder="Kết quả"
+            />
+          </div>
+          <div class="btn">
+            <input type="button" value="Tính" onclick="calculateEx1()" />
+            <input type="reset" value="Nhập lại" />
+          </div>
+        </form>
+      </section>
+      <!-- End Ex1 -->
+
+      <!-- Start Ex2 -->
+      <section class="exe exe2">
+        <div class="description">
+          <h2 class="heading-exe">Bài tập 2:</h2>
+          <div class="detail">
+            <div class="detail-steps">Input:</div>
+            <div class="detail-perform">Nhập 5 số thực</div>
+            <div class="detail-steps">Bước 1:</div>
+            <div class="detail-perform">
+              Tạo biến: number1, number2, number3, number4, number5,
+              trungBinhCong
+            </div>
+            <div class="detail-steps">Bước 2:</div>
+            <div class="detail-perform">
+              Gán giá trị cho: number1, number2, number3, number4, number5
+            </div>
+            <div class="detail-steps">Bước 3:</div>
+            <div class="detail-perform">
+              Tính trung bình cộng theo công thức (number1 + number2 + number3 +
+              number4 + number5) / 5
+            </div>
+            <div class="detail-steps">Bước 4:</div>
+            <div class="detail-perform">In kết quả ra console</div>
+            <div class="detail-steps">Output:</div>
+            <div class="detail-perform">Trung bình cộng của 5 số thực</div>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <label for="number1">Số thứ nhất:</label>
+            <input type="text" id="number1" placeholder="Nhập số" />
+            <label for="number2">Số thứ hai:</label>
+            <input type="text" id="number2" placeholder="Nhập số" />
+            <label for="number3">Số thứ ba:</label>
+            <input type="text" id="number3" placeholder="Nhập số" />
+            <label for="number4">Số thứ tư:</label>
+            <input type="text" id="number4" placeholder="Nhập số" />
+            <label for="number5">Số thứ năm:</label>
+            <input type="text" id="number5" placeholder="Nhập số" />
+            <label for="">Trung bình cộng:</label>
+            <input
+              type="text"
+              id="result--exe2"
+              readonly="readonly"
+              placeholder="Kết quả"
+            />
+          </div>
+          <div class="btn">
+            <input type="button" value="Tính" onclick="calculateEx2()" />
+            <input type="reset" value="Nhập lại" />
+          </div>
+        </form>
+      </section>
+      <!-- End Ex2 -->
+
+      <!-- Start Ex3 -->
+      <section class="exe exe3">
+        <div class="description">
+          <h2 class="heading-exe">Bài tập 3:</h2>
+          <div class="detail">
+            <div class="detail-steps">Input:</div>
+            <div class="detail-perform">Số tiền USD, giá tiền USD theo VND</div>
+            <div class="detail-steps">Bước 1:</div>
+            <div class="detail-perform">
+              Tạo biến soTienUSD, giaTienVND, giaQuyDoi
+            </div>
+            <div class="detail-steps">Bước 2:</div>
+            <div class="detail-perform">
+              Gán giá trị cho biến soTienUSD, giaTienVND
+            </div>
+            <div class="detail-steps">Bước 3:</div>
+            <div class="detail-perform">
+              Tính giá trị quy đổi theo công thức: giaQuyDOi = soTienUSD *
+              giaTienVND
+            </div>
+            <div class="detail-steps">Bước 4:</div>
+            <div class="detail-perform">In kết quả ra console</div>
+            <div class="detail-steps">Output:</div>
+            <div class="detail-perform">Giá tiền USD quy đổi sang VND</div>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <label for="money--usd">Số tiền USD:</label>
+            <input type="text" id="money--usd" placeholder="Nhập số tiền" />
+
+            <label for="price">Giá tiền VNĐ:</label>
+            <input type="text" id="price" placeholder="Nhập giá tiền VNĐ" />
+
+            <label for="">Giá tiền quy đổi VNĐ:</label>
+            <input
+              type="text"
+              id="result--ex3"
+              readonly="readonly"
+              placeholder="Kết quả"
+            />
+          </div>
+          <div class="btn">
+            <input type="button" value="Tính" onclick="calculateEx3()" />
+            <input type="reset" value="Nhập lại" />
+          </div>
+        </form>
+      </section>
+      <!-- End Ex3 -->
+
+      <!-- Start Ex4 -->
+      <section class="exe exe4">
+        <div class="description">
+          <h2 class="heading-exe">Bài tập 4:</h2>
+          <div class="detail">
+            <div class="detail-steps">Input:</div>
+            <div class="detail-perform">Chiều dài, chiều rộng</div>
+            <div class="detail-steps">Bước 1:</div>
+            <div class="detail-perform">
+              Tạo biến chieuDai, chieuRong, chuVi, dienTich
+            </div>
+            <div class="detail-steps">Bước 2:</div>
+            <div class="detail-perform">
+              Gán giá trị cho biến chieuDai, chieuRong, chuVi, dienTich
+            </div>
+            <div class="detail-steps">Bước 3:</div>
+            <div class="detail-perform">
+              Tính theo công thức:<br />
+              chu vi = (chiều dài + chiều rộng) * 2 <br />
+              diện tích = chiều dài * chiều rộng
+            </div>
+            <div class="detail-steps">Bước 4:</div>
+            <div class="detail-perform">In kết quả ra console</div>
+            <div class="detail-steps">Output:</div>
+            <div class="detail-perform">Diện tích, chu vi hình chữ nhật</div>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <label for="height">Chiều dài:</label>
+            <input type="text" id="height" placeholder="Nhập chiều dài" />
+
+            <label for="width">Chiều rộng:</label>
+            <input type="text" id="width" placeholder="Nhập chiều rộng" />
+
+            <label for="">Diện tích:</label>
+            <input
+              type="text"
+              id="result--s"
+              readonly="readonly"
+              placeholder="Kết quả"
+            />
+
+            <label for="">Chu vi: </label>
+            <input
+              type="text"
+              id="result--c"
+              readonly="readonly"
+              placeholder="Kết quả"
+            />
+          </div>
+          <div class="btn">
+            <input type="button" value="Tính" onclick="calculateEx4()" />
+            <input type="reset" value="Nhập lại" />
+          </div>
+        </form>
+      </section>
+      <!-- End Ex4 -->
+
+      <!-- Start Ex5 -->
+      <section class="exe exe5">
+        <div class="description">
+          <h2 class="heading-exe">Bài tập 5:</h2>
+          <div class="detail">
+            <div class="detail-steps">Input:</div>
+            <div class="detail-perform">Nhập số có 2 chữ số</div>
+            <div class="detail-steps">Bước 1:</div>
+            <div class="detail-perform">
+              Tạo biến: number, hangChuc, hangDonVi, sum
+            </div>
+            <div class="detail-steps">Bước 2:</div>
+            <div class="detail-perform">Gán giá trị cho biến number</div>
+            <div class="detail-steps">Bước 3:</div>
+            <div class="detail-perform">
+              Tính theo công thức:<br />
+              hangDonVi = chia cho 10 lấy dư <br />
+              hangChuc = chia cho 10 lấy nguyên <br />
+              sum = hangChuc + hangDonVi
+            </div>
+            <div class="detail-steps">Bước 4:</div>
+            <div class="detail-perform">In kết quả ra console</div>
+            <div class="detail-steps">Output:</div>
+            <div class="detail-perform">Tổng 2 ký số của số đó</div>
+          </div>
+        </div>
+
+        <form action="">
+          <div class="form">
+            <label for="number">Số có 2 chữ số:</label>
+            <input type="text" id="number" placeholder="Nhập số" />
+
+            <label for="chuc">Chữ số hàng chục:</label>
+            <input
+              id="chuc"
+              type="text"
+              placeholder="Chữ số hàng chục"
+              readonly="readonly"
+            />
+
+            <label for="donvi">Chữ số hàng đơn vị:</label>
+            <input
+              id="donvi"
+              type="text"
+              readonly="readonly"
+              placeholder="Chữ số hàng đơn vị"
+            />
+
+            <label for="">Tổng 2 chữ số:</label>
+            <input
+              type="text"
+              id="result"
+              readonly="readonly"
+              placeholder="Kết quả"
+            />
+          </div>
+          <div class="btn">
+            <input type="button" value="Tính" onclick="calculateEx5()" />
+            <input type="reset" value="Nhập lại" />
+          </div>
+        </form>
+      </section>
+      <!-- End Ex5 -->
+    </div>
+
+    <script src="./js/bai1.js"></script>
+    <script src="./js/bai2.js"></script>
+    <script src="./js/bai3.js"></script>
+    <script src="./js/bai4.js"></script>
+    <script src="./js/bai5.js"></script>
+  </body>
+</html>
